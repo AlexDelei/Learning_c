@@ -29,8 +29,13 @@
 /*Here , PI is the macro name which will be replaced by 3.14*/
 
 /*Function-like macro*/
-/*THis looks like a function call*/
-#define MIN(a , b)((a) < (b)? (a):(b));
+/*THis looks like a function call
+They can take arguements just like functions
+it's invoked by writing the name of the macro followed followed by a list of arguements in parethensis separated by commas
+the number of arguements should match the number of parameters in the macro definition
+*/
+#define MIN(a , b)((a) < (b)? (a):(b))
+#define MIN(a + 28, *p) ((a + 28) < (*p) ? (a + 28):(*p))
 /*MIN is the macro name*/
 
 /*C predifined Macros*/
