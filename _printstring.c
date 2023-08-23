@@ -11,7 +11,7 @@ int _printstring(char *s)
 
 	while (*s != '\0')
 	{
-		putchar(*s);
+		_putchar(*s);
 		s++;
 		i++;
 	}
